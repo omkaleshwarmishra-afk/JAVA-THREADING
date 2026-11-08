@@ -11,4 +11,4 @@ public class Demo4 {
 }
 // start() or run()
 
-// can we atart() the same thread twice ?
+// can we start() the same thread twice ?

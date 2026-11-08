@@ -13,8 +13,15 @@ public class Demo2 {
         });
 
         t1.start();
-        t1.join();  // let the t1 thread first complete
+      //   t1.join();
+        t1   .join(1000);  // let the t1 thread first complete
         System.out.println("main thread end");
     }
 }
 // join()
+/*
+main thread --> Waiting
+t1 thread --> runnable
+main thread --> waiting --> terminated
+
+ */
