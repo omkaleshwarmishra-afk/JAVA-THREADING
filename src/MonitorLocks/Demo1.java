@@ -30,8 +30,16 @@ public class Demo1 {
 class Counter {
     public int count = 0;
 
-    synchronized void increment(){
-        count++;
+   void increment(){
+
+        // normal code
+
+        synchronized (this) {
+            count++;
+
+            // normal code
+
+        }
     }
 }
 
